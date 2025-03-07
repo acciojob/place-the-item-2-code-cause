@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Holder</title>
+  <style>
+    /* CSS for holder */
+    .holder {
+      display: flex;            /* Enable Flexbox */
+      justify-content: center;  /* Center items horizontally */
+      align-items: center;      /* Center items vertically */
+      flex-wrap: wrap;          /* Allow items to wrap */
+      gap: 10px;                /* Space between items */
+      height: 100vh;            /* Full viewport height */
+      border: 2px solid black;  /* Visual border for holder */
+      box-sizing: border-box;   /* Include border in dimensions */
+    }
+
+    /* Styling for items */
+    .item {
+      width: 100px;              /* Fixed width */
+      height: 100px;             /* Fixed height */
+      display: flex;             /* Center content inside items */
+      justify-content: center;   
+      align-items: center;       
+      background-color: lightblue; /* Item background */
+      border: 1px solid blue;    /* Item border */
+      font-size: 20px;           /* Item font size */
+    }
+  </style>
 </head>
 
 <body>
-<div class="holder">
-  <div class="item">Item 1</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 3</div>
-</div>
 
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="holder">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
 
 </body>
 
